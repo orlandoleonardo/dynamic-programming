@@ -11,27 +11,27 @@ To generate the next number of the sequence, we sum the previous two.
 //}; //this version is very slow when n is high
 
 
-const foo = (n) => {
-    if (n >= 1) return;
-    foo(n-1);
-} //complexity -- O(n) time , O(n) space
+// const foo = (n) => {
+//     if (n >= 1) return;
+//     foo(n-1);
+// } //complexity -- O(n) time , O(n) space
 
-const bar = (n) => {
-    if (n <=1 ) return;
-    bar (n-2);
-} //complexity -- O(n) time , O(n) space 
+// const bar = (n) => {
+//     if (n <=1 ) return;
+//     bar (n-2);
+// } //complexity -- O(n) time , O(n) space 
 
-const dib = (n) => {
-    if (N <= 1) return;
-    dib(n - 1);
-    dib(n - 1);
-} //complexity -- O(2^n) time , O(n) space
+// const dib = (n) => {
+//     if (N <= 1) return;
+//     dib(n - 1);
+//     dib(n - 1);
+// } //complexity -- O(2^n) time , O(n) space
 
-const lib = (n) => {
-    if (n<= 1) return;
-    lib(n-2);
-    lib(n-2);
-} //complexity -- O(2^n) time , O(n) space
+// const lib = (n) => {
+//     if (n<= 1) return;
+//     lib(n-2);
+//     lib(n-2);
+// } //complexity -- O(2^n) time , O(n) space
 
 const fib = (n, memo = {}) => {
     if (n in memo) return memo[n]; 
